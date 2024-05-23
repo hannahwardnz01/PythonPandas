@@ -9,7 +9,7 @@ hideturtle()
 Colors = ["yellow", "purple", "yellow", "purple"]
 
 # repeat x times times
-x = 100
+x = 30
 for i in range(x):
     #for each color
     for col in Colors:
@@ -19,5 +19,3 @@ for i in range(x):
         lt(90)
         circle(200-i, 100)
         rt(60)
-
-# this was more for me to figure out how forking/pull requests work on github, but i hope you enjoy this simple flower 💕
