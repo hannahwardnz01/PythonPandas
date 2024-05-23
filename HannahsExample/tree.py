@@ -1,16 +1,16 @@
-import turtle as t
+from turtle import *
 
 size = int(input("Size: ")) #50 to 100 is recommended
 
 # Set up the turtle window
-t.bgcolor("black")
-t.pensize(2)
-t.color("green")
-t.left(90)
-t.backward(size)
-t.speed(0)
-t.hideturtle()
-t.shape("turtle")
+bgcolor("black")
+pensize(2)
+color("green")
+left(90)
+backward(size)
+speed(0)
+hideturtle()
+shape("turtle")
 
 # Recursive function to draw the tree
 def tree(i):
@@ -18,25 +18,26 @@ def tree(i):
         return
     else:
         # Draw the trunk
-        t.forward(i)
-        t.color("orange")
-        t.circle(2)
-        t.color("brown")
+        forward(i)
+        color("orange")
+        circle(2)
+        color("brown")
 
         # Draw the left branch
-        t.left(30)
+        left(30)
         tree(3 * i / 4)
 
         # Draw the right branch
-        t.right(60)
+        right(60)
         tree(3 * i / 4)
 
         # Return to the trunk
-        t.left(30)
-        t.backward(i)
+        left(30)
+        backward(i)
 
 # Call the tree function with the given size
 tree(size)
 
 # Finish drawing
-t.done()
+exitonclick()
+done()
