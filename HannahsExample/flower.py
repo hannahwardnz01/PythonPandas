@@ -19,3 +19,5 @@ for i in range(x):
         lt(90)
         circle(200-i, 100)
         rt(60)
+
+exitonclick()
