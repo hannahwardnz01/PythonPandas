@@ -4,7 +4,8 @@ from turtle import *
 colormode(255)
 
 # Create turtle for drawing the wheel
-width(2)
+width(1)
+
 speed(0.5)
 hideturtle()
 
@@ -21,19 +22,18 @@ def draw():
 
     # number of circles 
     n = 0   
-
     # loop for printing tangent circles 
-    while(n < 30): 
+    while(n < 100): 
         
-        rt(12 * n)
-        circle(100) 
-        color(random_color())
+        rt(10.8)
+        circle(1665) 
+        color(122, 189, 255)
         n = n + 1
 
-    width(50)
-    up()
+    up(12)
     goto(-100, -350)
-    write("Random color circle", font=("Arial", 30)) 
+    write("cha cha!", font=("classic", 30)) 
+
 
 
 draw()
